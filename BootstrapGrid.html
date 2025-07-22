@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+    .brown-box {
+      background-color: #d4945f;
+    }
+    .black-box {
+      background-color: #3d2a2da9;
+    }
+    .pink-box {
+      background-color: #ffc0cb;
+    }
+    .green-box {
+      background-color: #c9f5c9;
+    }
+    .greentree-box {
+      background-color: #9fc5b7;
+    }
+    .Head {
+      font-size: large;
+    }
+    .my-jumbotron {
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+            background-color: #000000;
+            /* Light gray background */
+            border-radius: .3rem;
+            text-align: center;
+            background-image: url("image/onemain.jpg");
+            /* Example: add a background image */
+            background-size: cover;
+            background-position: center;
+            color: rgb(12, 1, 1);
+            /* Text color for better contrast with background image */
+            text-shadow: 2px 2px 4px rgba(233, 227, 227, 0.7);
+            /* Text shadow for readability */
+        }
+        .custom-navbar {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            background-color: #4a6fa5;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .custom-navbar .navbar-nav .nav-link {
+            color: #e9ecef !important;
+            font-weight: 600;
+            padding: 0.75rem 1.25rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        .custom-navbar .navbar-nav .nav-link:hover,
+        .custom-navbar .navbar-nav .nav-link.active {
+            background-color: #3b5a8e;
+            color: #ffffff !important;
+            border-radius: 5px;
+        }
+        
+        .custom-navbar .navbar-brand {
+            color: #ffffff !important;
+            font-weight: 700;
+        }
+        
+        .custom-navbar .dropdown-menu {
+            background-color: #3b5a8e;
+            border: none;
+        }
+        
+        .custom-navbar .dropdown-item {
+            color: #e9ecef;
+            padding: 0.75rem 1.25rem;
+        }
+        
+        .custom-navbar .dropdown-item:hover {
+            background-color: #2a4066;
+            color: #ffffff;
+        }
+        
+        @media (max-width: 767.98px) {
+            .pink-box,
+            .green-box,
+            .blue-box,
+            .purple-box,
+            .orange-box {
+                text-align: center;
+            }
+            .custom-navbar .navbar-nav .nav-link,
+            .custom-navbar .dropdown-item {
+                text-align: center;
+            }
+        }
+  </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="my-jumbotron">
+        <h1>Music in Japanese</h1>
+        <p>ประวัติและความเป็นมาคล่าวๆของแนวเพลงญี่ปุ่นและประของศิลปินตัวอย่าง</p>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-12 box brown-box">
+            <h1 class="bg-light">Music in Japanese</h1>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-12 box black-box">
+            <img src="image/oneokrock.jpg" alt="History of Japanese Music" class="img-fluid">
+        </div>
+    </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MENU</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="BootstrapGrid.html">หน้าแรก</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownClasses" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                แนวเพลง
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownClasses">
+                                <li><a class="dropdown-item" href="JPop.html">J-Pop</a></li>
+                                <li><a class="dropdown-item" href="CityPop.html">City-Pop</a></li>
+                                <li><a class="dropdown-item" href="JRock.html">J-Rock</a></li>
+                                <li><a class="dropdown-item" href="AniMusic.html">Ani-song</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-3 box pink-box">เจป็อป (J-Pop)</div>
+        <div class="col-md-3 box pink-box">ซิตี้ป็อป (City Pop)</div>
+        <div class="col-md-3 box pink-box">เจร็อก (J-Rock)</div>
+        <div class="col-md-3 box pink-box">เพลงอนิเมะ (Anime Music)</div>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-3 box greentree-box">เจป็อป (J-Pop)</div>
+        <div class="col-md-2">
+            <img src="image/fujikaza.jpg" alt="History of Japanese Music" class="img-fluid"> </div>
+        <div class="col-md-7 box green-box">เจป็อป (J-Pop)ย่อมาจาก "Japanese Popular Music" เป็นแนวดนตรีที่ได้รับความนิยมในญี่ปุ่นและทั่วโลก มีลักษณะเป็นเพลงป็อปที่ผสมผสานดนตรีตะวันตก เช่น ร็อก, แดนซ์, ฮิปฮอป, และโซล </div>
+
+    </div>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-3 box greentree-box">ซิตี้ป็อป (City Pop)</div>
+        <div class="col-md-2">
+            <img src="image/staywithme.jfif" alt="History of Japanese Music" class="img-fluid"> </div>
+        <div class="col-md-7 box green-box">ซิตี้ป็อป (City Pop) เป็นแนวดนตรีที่ได้รับความนิยมในช่วงยุค 1970s และ 1980s โดยมีลักษณะเป็นเพลงป็อปที่มีความหลากหลายทางดนตรี เช่น ดิสโก้, ฟังก์, แจ๊ส, อาร์แอนด์บี, และอิเล็กทรอนิกส์ </div>
+        
+    </div>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-7 box green-box">เจร็อก (J-Rock) เป็นแนวดนตรีร็อกในญี่ปุ่นก็มีความหลากหลาย ทั้งร็อกแบบดั้งเดิม, โพสต์ร็อก, และอินดี้ร็อก </div>
+        <div class="col-md-2">
+            <img src="image/Xjapan.jpg" alt="History of Japanese Music" class="img-fluid"> </div>
+        <div class="col-md-3 box greentree-box">เจร็อก (J-Rock)</div>
+        
+    </div>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-7 box green-box">เพลงอนิเมะ (Anime Music) เป็นเพลงประกอบอนิเมะหรือเพลงประกอบภาพยนตร์อนิเมชั่นก็เป็นส่วนสำคัญของวงการเพลงญี่ปุ่น โดยมีศิลปินและวงดนตรีมากมายที่สร้างสรรค์เพลงสำหรับอนิเมะ </div>
+        <div class="col-md-2">
+            <img src="image/kenshi.jpg" alt="History of Japanese Music" class="img-fluid"> </div>
+        <div class="col-md-3 box greentree-box">เพลงอนิเมะ (Anime Music)</div>
+        
+    </div>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

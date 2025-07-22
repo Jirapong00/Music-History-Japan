@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+    .brown-box {
+      background-color: #d4945f;
+    }
+    .black-box {
+      background-color: #3d2a2da9;
+    }
+    .pink-box {
+      background-color: #ffc0cb;
+    }
+    .green-box {
+      background-color: #c9f5c9;
+    }
+    .greentree-box {
+      background-color: #85dfbc;
+    }
+    .Head {
+      font-size: large;
+    }
+    .my-jumbotron {
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+            background-color: #000000;
+            /* Light gray background */
+            border-radius: .3rem;
+            text-align: center;
+            background-image: url("image/onemain.jpg");
+            /* Example: add a background image */
+            background-size: cover;
+            background-position: center;
+            color: rgb(12, 1, 1);
+            /* Text color for better contrast with background image */
+            text-shadow: 2px 2px 4px rgba(233, 227, 227, 0.7);
+            /* Text shadow for readability */
+        }
+        .my-jumbotron {
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+            background-color: #000000;
+            /* Light gray background */
+            border-radius: .3rem;
+            text-align: center;
+            background-image: url("image/onemain.jpg");
+            /* Example: add a background image */
+            background-size: cover;
+            background-position: center;
+            color: rgb(12, 1, 1);
+            /* Text color for better contrast with background image */
+            text-shadow: 2px 2px 4px rgba(233, 227, 227, 0.7);
+            /* Text shadow for readability */
+        }
+        .custom-navbar {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            background-color: #4a6fa5;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .custom-navbar .navbar-nav .nav-link {
+            color: #e9ecef !important;
+            font-weight: 600;
+            padding: 0.75rem 1.25rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        .custom-navbar .navbar-nav .nav-link:hover,
+        .custom-navbar .navbar-nav .nav-link.active {
+            background-color: #3b5a8e;
+            color: #ffffff !important;
+            border-radius: 5px;
+        }
+        
+        .custom-navbar .navbar-brand {
+            color: #ffffff !important;
+            font-weight: 700;
+        }
+        
+        .custom-navbar .dropdown-menu {
+            background-color: #3b5a8e;
+            border: none;
+        }
+        
+        .custom-navbar .dropdown-item {
+            color: #e9ecef;
+            padding: 0.75rem 1.25rem;
+        }
+        
+        .custom-navbar .dropdown-item:hover {
+            background-color: #2a4066;
+            color: #ffffff;
+        }
+        
+        @media (max-width: 767.98px) {
+            .pink-box,
+            .green-box,
+            .blue-box,
+            .purple-box,
+            .orange-box {
+                text-align: center;
+            }
+            .custom-navbar .navbar-nav .nav-link,
+            .custom-navbar .dropdown-item {
+                text-align: center;
+            }
+        }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+      <div class="my-jumbotron">
+          <h1>J-Rock</h1>
+          <p>ประวัติและความเป็นมาคล่าวๆของแนวเพลงญี่ปุ่นและประของศิลปินตัวอย่าง</p>
+      </div>
+
+      <div class="row justify-content-center">
+          <div class="col-md-12 box brown-box">
+              <h1 class="bg-light">J-Rock</h1>
+          </div>
+      </div>
+    
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="image/Myfirststory.jpg" class="d-block w-100" alt="Myfirststory">
+                </div>
+                <div class="carousel-item">
+                  <img src="image/bandmaid.jpg" class="d-block w-100" alt="bandmaid">
+                </div>
+                <div class="carousel-item">
+                  <img src="image/babymetal.jpg" class="d-block w-100" alt="babymetal">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MENU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="BootstrapGrid.html">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownClasses" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            แนวเพลง
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownClasses">
+                            <li><a class="dropdown-item" href="JPop.html">J-Pop</a></li>
+                            <li><a class="dropdown-item" href="CityPop.html">City-Pop</a></li>
+                            <li><a class="dropdown-item" href="JRock.html">J-Rock</a></li>
+                            <li><a class="dropdown-item" href="AniMusic.html">Ani-song</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+
+    <div class="row justify-content-center">
+      <div class="col-md-7 box brown-box">
+          <h3 class="bg-light">J-Rock</h3>
+      </div>
+  </div>
+
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-3 box greentree-box">เจร็อก (J-Rock)</div>
+    <div class="col-md-12 box green-box">ร็อกญี่ปุ่น( ญี่ปุ่น :日本のロック, Hepburn : Nihon no Rokku )บางครั้งย่อเป็นJ-rock (ジェイ・ロック, Jei Rokku )เป็นดนตรีร็อกจากประเทศญี่ปุ่น ได้รับอิทธิพลจาก ร็อก อเมริกันและบริติชในช่วงทศวรรษ 1960 วงดนตรีร็อกวงแรกในญี่ปุ่นแสดงสิ่งที่เรียกว่าเสียงกลุ่มโดยมีเนื้อร้องเป็นภาษาอังกฤษเกือบทั้งหมดวงดนตรีโฟล์กร็อกHappy Endในช่วงต้นทศวรรษ 1970 ได้รับการยกย่องว่าเป็นวงแรกที่ร้องเพลงร็อกในภาษาญี่ปุ่นวงพังก์ร็อกBoøwyและThe Blue Heartsและกลุ่มฮาร์ดร็อก / เฮฟวีเมทั ล X JapanและB'zเป็นผู้นำร็อกญี่ปุ่นในช่วงปลายทศวรรษ 1980 และต้นทศวรรษ 1990 ด้วยการประสบความสำเร็จอย่างสูงในกระแสหลัก</div>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
